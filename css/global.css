@@ -1,1 +1,13 @@
 /* Global CSS */
+
+.removed {
+  color: #ccc;
+}
+
+.removed label {
+  text-decoration: line-through;
+}
+
+ul li {
+  list-style-type: none;
+}
