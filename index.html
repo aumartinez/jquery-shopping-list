@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Shopping list with JQuery</title>
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -18,7 +18,27 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <h1 class="text-center">
+          A shopping list
+          </h1>
+          <form action="/" method="get">          
+            <div class="input-group">
+              <input placeholder="add shopping list item" type="text" class="js-new-item form-control" />
+              <div class="input-group-btn">
+                <button id="add-item" class="js-add btn btn-default" type="button">
+                Add!
+                </button>
+              </div>              
+            </div>
+          </form>
+          <ul>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.5.1.min.js"></script>
