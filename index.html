@@ -25,7 +25,7 @@
           <h1 class="text-center">
           A shopping list
           </h1>
-          <form action="#" method="get">          
+          <form id="shopping-list" action="#" method="get">          
             <div class="input-group">
               <input placeholder="add shopping list item" type="text" class="js-new-item form-control" />
               <div class="input-group-btn">
@@ -34,9 +34,18 @@
                 </button>
               </div>              
             </div>
+            <ul>
+            </ul>
           </form>
-          <ul>
-          </ul>
+          <form action="#" method="get">
+            <div class="footer">
+              <hr />
+              <p>
+                <em>Change the title of your shopping list here</em>
+                <input class="js-change-title form-control" type="text" placeholder="My Shopping List" value />
+              </p>
+            </div> 
+          </form>
         </div>
       </div>
     </div>

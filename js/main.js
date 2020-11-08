@@ -3,9 +3,12 @@
 $(document).ready(function(){
   
   $("form").submit(function(e){    
-    //On form submit prevent form submission, stay on the same page
+    //On form submit prevent form submission, stay on the same page    
+    e.preventDefault;    
+  });
+  
+  $("#shopping-list").submit(function(e){
     //Fire add item function
-    e.preventDefault;
     addItem();
   });
   
@@ -60,7 +63,17 @@ $(document).ready(function(){
     $el.closest("li").toggleClass("removed");
   }
   
+  function changeTitle() {
+    if ($(".js-change-title").val().trim().length == 0){
+      $("h1").text("A shopping list");
+    }
+    else{
+      $("h1").text($(".js-change-title").val().trim());      
+    }
+  }
+  
   $(".js-add").click(addItem);
   $(".js-item").click(checkedItem);
+  $(".js-change-title").keyup(changeTitle);
   
 });
