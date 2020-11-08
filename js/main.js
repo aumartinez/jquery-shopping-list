@@ -2,15 +2,16 @@
 
 $(document).ready(function(){
   
-  $("form").submit(function(e){
+  $("form").submit(function(e){    
     e.preventDefault;
+    addItem();
   });
   
   function addItem() {
     let $ul;
     let $li;
-    let $label;
     let $div;
+    let $label;    
     let value;
     
     value = $(".js-new-item").val().trim();
