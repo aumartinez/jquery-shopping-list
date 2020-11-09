@@ -9,6 +9,7 @@ $(document).ready(function(){
   
   $("#shopping-list").submit(function(e){
     //Fire add item function
+    e.preventDefault;
     addItem();
   });
   
