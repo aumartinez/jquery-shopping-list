@@ -4,12 +4,12 @@ $(document).ready(function(){
   
   $("form").submit(function(e){    
     //On form submit prevent form submission, stay on the same page    
-    e.preventDefault;    
+    e.preventDefault();    
   });
   
   $("#shopping-list").submit(function(e){
     //Fire add item function
-    e.preventDefault;
+    e.preventDefault();
     addItem();
   });
   
